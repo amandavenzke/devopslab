@@ -13,6 +13,7 @@ install:
   - pip install flask
   - pip install flask flask-wtf  
   - pip install flask flask-wtf coverage
+
 addons:
   sonarcloud:
     organization: amandavenzke
