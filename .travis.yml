@@ -62,7 +62,7 @@ jobs:
         on:
             branch: main
     - stage: Teste em PRD
-      script: 'curl https://devopslab-gaby.herokuapp.com/'         
+      script: 'curl https://devopslab-amanda.herokuapp.com/'         
 
 notifications:
   slack:
