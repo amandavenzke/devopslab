@@ -46,6 +46,9 @@ jobs:
         app: devopslab-amanda-stg
         on: 
             branch: main
+            
+    - stage: Teste em STG
+      script: 'curl https://devopslab-amanda-stg.herokuapp.com/' 
 
     - stage: Deploy PROD
       script: skip
@@ -58,6 +61,8 @@ jobs:
         app: devopslab-amanda
         on:
             branch: main
+    - stage: Teste em PRD
+      script: 'curl https://devopslab-gaby.herokuapp.com/'         
 
 notifications:
   slack:
