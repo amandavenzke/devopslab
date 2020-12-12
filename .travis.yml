@@ -47,8 +47,6 @@ jobs:
           on: 
               branch: main
 
-
-
     - stage: Deploy PROD
       script: skip
       # Definir o Deploy no Heroku
