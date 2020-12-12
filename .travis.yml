@@ -46,3 +46,6 @@ jobs:
         app: devopslab-amanda
         on:
             branch: main
+
+notifications:
+  slack: devops-ciworkspace:0r4qmuokPayE8ASMLPSZhWxk    
