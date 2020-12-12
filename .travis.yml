@@ -36,16 +36,16 @@ jobs:
           token: ${SONAR_TOKEN}
 
     - stage: Deploy STG                                                                                                                                           
-        script: skip
-        # Definir o Deploy no Heroku
-        deploy:
-          provider: heroku
-          strategy: api
-          api_key: $HEROKU_API_KEY
-          edge: true
-          app: devopslab-amanda-stg
-          on: 
-              branch: main
+      script: skip
+      # Definir o Deploy no Heroku
+      deploy:
+        provider: heroku
+        strategy: api
+        api_key: $HEROKU_API_KEY
+        edge: true
+        app: devopslab-amanda-stg
+        on: 
+            branch: main
 
     - stage: Deploy PROD
       script: skip
